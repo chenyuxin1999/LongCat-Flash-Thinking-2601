@@ -115,11 +115,11 @@ Note:
 
 ## Evaluation in Random Complex Tasks
 
-We propose a novel approach to evaluate the generalization ability of agentic models. Specifically, we build an automated synthesis pipeline that allows users to randomly generate complex tasks for arbitrary scenarios given a set of keywords. Each generated task is equipped with a corresponding tool set and an executable environment. Since the tools in these environments are highly randomized, we evaluate the model’s performance in such environments to assess its generalization capability. LongCat consistently achieves superior performance under these settings, demonstrating strong generalization ability in agentic scenarios. We also provide a [video demo](https://youtu.be/7eVgUD351FY) for illustration.
+We propose a novel approach to evaluate the generalization ability of agentic models. Specifically, we build an automated synthesis pipeline that allows users to randomly generate complex tasks for arbitrary scenarios given a set of keywords. Each generated task is equipped with a corresponding tool set and an executable environment. Since the tools in these environments are highly randomized, we evaluate the model’s performance in such environments to assess its generalization capability. LongCat consistently achieves superior performance under these settings, demonstrating strong generalization ability in agentic scenarios. We also provide a [video demo](https://youtu.be/zc_OIhxFMFw) for illustration.
 
 <div align="center">
-  <a href="https://youtu.be/7eVgUD351FY" target="_blank">
-    <img src="https://img.youtube.com/vi/7eVgUD351FY/maxresdefault.jpg" alt="video">
+  <a href="https://youtu.be/zc_OIhxFMFw" target="_blank">
+    <img src="https://img.youtube.com/vi/zc_OIhxFMFw/maxresdefault.jpg" alt="video">
   </a>
 </div>
 
@@ -131,7 +131,7 @@ This example demonstrates how the template handles conversational history and th
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-model_name = "meituan-longcat/LongCat-Flash-Thinking"
+model_name = "meituan-longcat/LongCat-Flash-Thinking-2601"
 
 # Load the tokenizer and the model
 tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -226,12 +226,12 @@ print(tokenizer.decode(output_ids, skip_special_tokens=True).strip("\n"))
 
 ## Deployment
 
-We have implemented basic adaptations in both SGLang and vLLM to support the deployment of LongCat-Flash-Thinking. Please refer to the [Deployment Guide](docs/deployment_guide.md) for detailed deployment instructions.
+We have implemented basic adaptations in both SGLang and vLLM to support the deployment of LongCat-Flash-Thinking-2601. Please refer to the [Deployment Guide](docs/deployment_guide.md) for detailed deployment instructions.
 
 
 ## Chat Website
 
-You can chat with LongCat-Flash-Thinking on our official website: [https://longcat.ai](https://longcat.ai).
+You can chat with LongCat-Flash-Thinking-2601 on our official website: [https://longcat.ai](https://longcat.ai).
 Please turn on the button "Think" ("深度思考" in Chinese) before submitting your request.
 
 
